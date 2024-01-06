@@ -37,6 +37,9 @@ const Editor = ({ socketRef, roomId, onCodeChange }) => {
         init();
     }, []);
 
+
+
+    
     useEffect(() => {
         if (socketRef.current) {
             socketRef.current.on(ACTIONS.CODE_CHANGE, ({ code }) => {
